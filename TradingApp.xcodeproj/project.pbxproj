@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		450DC3972AE8618000BC4858 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DC3962AE8618000BC4858 /* Assembler.swift */; };
+		455F563D2ADFE58300E7CB2C /* TopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F563C2ADFE58300E7CB2C /* TopPresenter.swift */; };
+		455F563F2ADFE58F00E7CB2C /* TopInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F563E2ADFE58F00E7CB2C /* TopInteractor.swift */; };
+		455F56412ADFE59A00E7CB2C /* TopRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56402ADFE59A00E7CB2C /* TopRouter.swift */; };
+		455F56432ADFE5AF00E7CB2C /* ProtocolsTopModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56422ADFE5AF00E7CB2C /* ProtocolsTopModule.swift */; };
+		455F56472ADFF76000E7CB2C /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56462ADFF76000E7CB2C /* TradeViewController.swift */; };
+		455F564B2ADFFF2E00E7CB2C /* TradeModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F564A2ADFFF2E00E7CB2C /* TradeModuleProtocols.swift */; };
+		455F564D2ADFFF7000E7CB2C /* TradeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F564C2ADFFF7000E7CB2C /* TradeRouter.swift */; };
+		455F56502AE0086C00E7CB2C /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F564F2AE0086C00E7CB2C /* TableView.swift */; };
+		455F56542AE00EB000E7CB2C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56532AE00EB000E7CB2C /* Network.swift */; };
+		455F56582AE010A600E7CB2C /* TradePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56572AE010A600E7CB2C /* TradePresenter.swift */; };
+		455F565A2AE010F700E7CB2C /* TradeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56592AE010F700E7CB2C /* TradeInteractor.swift */; };
+		455F56602AE013EB00E7CB2C /* CurrencyModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F565F2AE013EB00E7CB2C /* CurrencyModuleProtocols.swift */; };
+		455F56622AE013FC00E7CB2C /* CurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56612AE013FC00E7CB2C /* CurrencyRouter.swift */; };
+		455F56642AE0140600E7CB2C /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F56632AE0140600E7CB2C /* CurrencyViewController.swift */; };
+		4583419A2ADFE1E300742A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458341992ADFE1E300742A3D /* AppDelegate.swift */; };
+		4583419E2ADFE1E300742A3D /* ViewTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583419D2ADFE1E300742A3D /* ViewTopController.swift */; };
+		458341A32ADFE1E900742A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458341A22ADFE1E900742A3D /* Assets.xcassets */; };
+		458341A62ADFE1E900742A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458341A42ADFE1E900742A3D /* LaunchScreen.storyboard */; };
+		459E9E922AE1E29F00B83631 /* CurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9E912AE1E29F00B83631 /* CurrencyPresenter.swift */; };
+		459E9E952AE1E2B500B83631 /* CurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9E942AE1E2B500B83631 /* CurrencyInteractor.swift */; };
+		459E9E9D2AE29EFB00B83631 /* PreloaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9E9C2AE29EFB00B83631 /* PreloaderViewController.swift */; };
+		459E9E9F2AE29F1A00B83631 /* PreloaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9E9E2AE29F1A00B83631 /* PreloaderPresenter.swift */; };
+		459E9EA12AE29F2F00B83631 /* PreloaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA02AE29F2F00B83631 /* PreloaderInteractor.swift */; };
+		459E9EA32AE29F3F00B83631 /* PreloaderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA22AE29F3F00B83631 /* PreloaderRouter.swift */; };
+		459E9EA52AE29F5500B83631 /* PreloaderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA42AE29F5500B83631 /* PreloaderProtocols.swift */; };
+		459E9EA72AE2CA4000B83631 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA62AE2CA4000B83631 /* Model.swift */; };
+		45E012322AE121510067390C /* CustomViewTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E012312AE121510067390C /* CustomViewTrade.swift */; };
+		45F45F022B25216D00536568 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F45F012B25216D00536568 /* CollectionViewCell.swift */; };
+		45F45F042B3310A900536568 /* CustomKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F45F032B3310A800536568 /* CustomKeyboardView.swift */; };
+		45F45F062B3B823100536568 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F45F052B3B823100536568 /* WelcomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		450DC3962AE8618000BC4858 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		455F563C2ADFE58300E7CB2C /* TopPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPresenter.swift; sourceTree = "<group>"; };
+		455F563E2ADFE58F00E7CB2C /* TopInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopInteractor.swift; sourceTree = "<group>"; };
+		455F56402ADFE59A00E7CB2C /* TopRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRouter.swift; sourceTree = "<group>"; };
+		455F56422ADFE5AF00E7CB2C /* ProtocolsTopModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsTopModule.swift; sourceTree = "<group>"; };
+		455F56462ADFF76000E7CB2C /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
+		455F564A2ADFFF2E00E7CB2C /* TradeModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeModuleProtocols.swift; sourceTree = "<group>"; };
+		455F564C2ADFFF7000E7CB2C /* TradeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRouter.swift; sourceTree = "<group>"; };
+		455F564F2AE0086C00E7CB2C /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		455F56532AE00EB000E7CB2C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		455F56572AE010A600E7CB2C /* TradePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradePresenter.swift; sourceTree = "<group>"; };
+		455F56592AE010F700E7CB2C /* TradeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeInteractor.swift; sourceTree = "<group>"; };
+		455F565F2AE013EB00E7CB2C /* CurrencyModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModuleProtocols.swift; sourceTree = "<group>"; };
+		455F56612AE013FC00E7CB2C /* CurrencyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRouter.swift; sourceTree = "<group>"; };
+		455F56632AE0140600E7CB2C /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		458341962ADFE1E300742A3D /* TradingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		458341992ADFE1E300742A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4583419D2ADFE1E300742A3D /* ViewTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTopController.swift; sourceTree = "<group>"; };
+		458341A22ADFE1E900742A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		458341A52ADFE1E900742A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		458341A72ADFE1E900742A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459E9E912AE1E29F00B83631 /* CurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPresenter.swift; sourceTree = "<group>"; };
+		459E9E942AE1E2B500B83631 /* CurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInteractor.swift; sourceTree = "<group>"; };
+		459E9E9C2AE29EFB00B83631 /* PreloaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderViewController.swift; sourceTree = "<group>"; };
+		459E9E9E2AE29F1A00B83631 /* PreloaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderPresenter.swift; sourceTree = "<group>"; };
+		459E9EA02AE29F2F00B83631 /* PreloaderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderInteractor.swift; sourceTree = "<group>"; };
+		459E9EA22AE29F3F00B83631 /* PreloaderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderRouter.swift; sourceTree = "<group>"; };
+		459E9EA42AE29F5500B83631 /* PreloaderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderProtocols.swift; sourceTree = "<group>"; };
+		459E9EA62AE2CA4000B83631 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		45E012312AE121510067390C /* CustomViewTrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTrade.swift; sourceTree = "<group>"; };
+		45F45F012B25216D00536568 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		45F45F032B3310A800536568 /* CustomKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardView.swift; sourceTree = "<group>"; };
+		45F45F052B3B823100536568 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		458341932ADFE1E300742A3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		450DC3952AE8615A00BC4858 /* AssemblerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				450DC3962AE8618000BC4858 /* Assembler.swift */,
+			);
+			path = AssemblerBuilder;
+			sourceTree = "<group>";
+		};
+		450DC39B2AE8700500BC4858 /* TabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				458341AF2ADFE28900742A3D /* TopItem */,
+				455F56442ADFF73800E7CB2C /* TradeItem */,
+				455F565B2AE0139C00E7CB2C /* CurrencyModule */,
+			);
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
+		455F56372ADFE3DA00E7CB2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4583419D2ADFE1E300742A3D /* ViewTopController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		455F56382ADFE3E300E7CB2C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				455F563C2ADFE58300E7CB2C /* TopPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		455F56392ADFE3EA00E7CB2C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				455F563E2ADFE58F00E7CB2C /* TopInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		455F563A2ADFE3F200E7CB2C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				455F56422ADFE5AF00E7CB2C /* ProtocolsTopModule.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		455F563B2ADFE3FB00E7CB2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				455F56402ADFE59A00E7CB2C /* TopRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		455F56442ADFF73800E7CB2C /* TradeItem */ = {
+			isa = PBXGroup;
+			children = (
+				455F56492ADFFF1400E7CB2C /* Protocols */,
+				455F56482ADFFF0A00E7CB2C /* Router */,
+				455F56552AE0107000E7CB2C /* Presenter */,
+				455F56562AE0107600E7CB2C /* Interactor */,
+				455F56452ADFF74E00E7CB2C /* View */,
+			);
+			path = TradeItem;
+			sourceTree = "<group>";
+		};
+		455F56452ADFF74E00E7CB2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				455F56462ADFF76000E7CB2C /* TradeViewController.swift */,
+				45E012312AE121510067390C /* CustomViewTrade.swift */,
+				45F45F032B3310A800536568 /* CustomKeyboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		455F56482ADFFF0A00E7CB2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				455F564C2ADFFF7000E7CB2C /* TradeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		455F56492ADFFF1400E7CB2C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				455F564A2ADFFF2E00E7CB2C /* TradeModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		455F564E2AE0084A00E7CB2C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				455F564F2AE0086C00E7CB2C /* TableView.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		455F56512AE00E7E00E7CB2C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				455F56532AE00EB000E7CB2C /* Network.swift */,
+				459E9EA62AE2CA4000B83631 /* Model.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		455F56552AE0107000E7CB2C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				455F56572AE010A600E7CB2C /* TradePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		455F56562AE0107600E7CB2C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				455F56592AE010F700E7CB2C /* TradeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		455F565B2AE0139C00E7CB2C /* CurrencyModule */ = {
+			isa = PBXGroup;
+			children = (
+				455F565E2AE013D400E7CB2C /* Protocols */,
+				455F565D2AE013CE00E7CB2C /* Router */,
+				459E9E902AE1E27C00B83631 /* Interactor */,
+				459E9E8F2AE1E27600B83631 /* Presenter */,
+				455F565C2AE013C700E7CB2C /* View */,
+			);
+			path = CurrencyModule;
+			sourceTree = "<group>";
+		};
+		455F565C2AE013C700E7CB2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				455F56632AE0140600E7CB2C /* CurrencyViewController.swift */,
+				45F45F012B25216D00536568 /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		455F565D2AE013CE00E7CB2C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				455F56612AE013FC00E7CB2C /* CurrencyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		455F565E2AE013D400E7CB2C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				455F565F2AE013EB00E7CB2C /* CurrencyModuleProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4583418D2ADFE1E300742A3D = {
+			isa = PBXGroup;
+			children = (
+				458341982ADFE1E300742A3D /* TradingApp */,
+				458341972ADFE1E300742A3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		458341972ADFE1E300742A3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				458341962ADFE1E300742A3D /* TradingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		458341982ADFE1E300742A3D /* TradingApp */ = {
+			isa = PBXGroup;
+			children = (
+				458341AD2ADFE21100742A3D /* Application */,
+				455F56512AE00E7E00E7CB2C /* Entities */,
+				450DC3952AE8615A00BC4858 /* AssemblerBuilder */,
+				459E9E962AE29DF500B83631 /* PreloaderModule */,
+				450DC39B2AE8700500BC4858 /* TabBarModule */,
+				458341AE2ADFE22300742A3D /* Resources */,
+			);
+			path = TradingApp;
+			sourceTree = "<group>";
+		};
+		458341AD2ADFE21100742A3D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				458341992ADFE1E300742A3D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		458341AE2ADFE22300742A3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				458341A22ADFE1E900742A3D /* Assets.xcassets */,
+				458341A42ADFE1E900742A3D /* LaunchScreen.storyboard */,
+				458341A72ADFE1E900742A3D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		458341AF2ADFE28900742A3D /* TopItem */ = {
+			isa = PBXGroup;
+			children = (
+				455F563A2ADFE3F200E7CB2C /* Protocols */,
+				455F563B2ADFE3FB00E7CB2C /* Router */,
+				455F56392ADFE3EA00E7CB2C /* Interactor */,
+				455F56382ADFE3E300E7CB2C /* Presenter */,
+				455F564E2AE0084A00E7CB2C /* TableViewCell */,
+				455F56372ADFE3DA00E7CB2C /* View */,
+			);
+			path = TopItem;
+			sourceTree = "<group>";
+		};
+		459E9E8F2AE1E27600B83631 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				459E9E912AE1E29F00B83631 /* CurrencyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		459E9E902AE1E27C00B83631 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				459E9E942AE1E2B500B83631 /* CurrencyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		459E9E962AE29DF500B83631 /* PreloaderModule */ = {
+			isa = PBXGroup;
+			children = (
+				459E9E9B2AE29ED000B83631 /* Protocols */,
+				459E9E992AE29EB700B83631 /* Router */,
+				459E9E982AE29E3C00B83631 /* Presenter */,
+				459E9E9A2AE29EC000B83631 /* Interactor */,
+				459E9E972AE29E0800B83631 /* View */,
+			);
+			path = PreloaderModule;
+			sourceTree = "<group>";
+		};
+		459E9E972AE29E0800B83631 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45F45F072B3C0F9600536568 /* PreloaderView */,
+				45F45F082B3C0FA900536568 /* WelcomeView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		459E9E982AE29E3C00B83631 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				459E9E9E2AE29F1A00B83631 /* PreloaderPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		459E9E992AE29EB700B83631 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				459E9EA22AE29F3F00B83631 /* PreloaderRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		459E9E9A2AE29EC000B83631 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				459E9EA02AE29F2F00B83631 /* PreloaderInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		459E9E9B2AE29ED000B83631 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				459E9EA42AE29F5500B83631 /* PreloaderProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		45F45F072B3C0F9600536568 /* PreloaderView */ = {
+			isa = PBXGroup;
+			children = (
+				459E9E9C2AE29EFB00B83631 /* PreloaderViewController.swift */,
+			);
+			path = PreloaderView;
+			sourceTree = "<group>";
+		};
+		45F45F082B3C0FA900536568 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				45F45F052B3B823100536568 /* WelcomeViewController.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		458341952ADFE1E300742A3D /* TradingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458341AA2ADFE1E900742A3D /* Build configuration list for PBXNativeTarget "TradingApp" */;
+			buildPhases = (
+				458341922ADFE1E300742A3D /* Sources */,
+				458341932ADFE1E300742A3D /* Frameworks */,
+				458341942ADFE1E300742A3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradingApp;
+			productName = TradingApp;
+			productReference = 458341962ADFE1E300742A3D /* TradingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4583418E2ADFE1E300742A3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					458341952ADFE1E300742A3D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 458341912ADFE1E300742A3D /* Build configuration list for PBXProject "TradingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4583418D2ADFE1E300742A3D;
+			productRefGroup = 458341972ADFE1E300742A3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				458341952ADFE1E300742A3D /* TradingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		458341942ADFE1E300742A3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458341A62ADFE1E900742A3D /* LaunchScreen.storyboard in Resources */,
+				458341A32ADFE1E900742A3D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		458341922ADFE1E300742A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459E9E952AE1E2B500B83631 /* CurrencyInteractor.swift in Sources */,
+				455F56622AE013FC00E7CB2C /* CurrencyRouter.swift in Sources */,
+				45F45F042B3310A900536568 /* CustomKeyboardView.swift in Sources */,
+				455F56642AE0140600E7CB2C /* CurrencyViewController.swift in Sources */,
+				455F564B2ADFFF2E00E7CB2C /* TradeModuleProtocols.swift in Sources */,
+				450DC3972AE8618000BC4858 /* Assembler.swift in Sources */,
+				455F56502AE0086C00E7CB2C /* TableView.swift in Sources */,
+				455F56542AE00EB000E7CB2C /* Network.swift in Sources */,
+				455F56472ADFF76000E7CB2C /* TradeViewController.swift in Sources */,
+				459E9EA32AE29F3F00B83631 /* PreloaderRouter.swift in Sources */,
+				455F56602AE013EB00E7CB2C /* CurrencyModuleProtocols.swift in Sources */,
+				455F56412ADFE59A00E7CB2C /* TopRouter.swift in Sources */,
+				459E9EA72AE2CA4000B83631 /* Model.swift in Sources */,
+				45F45F062B3B823100536568 /* WelcomeViewController.swift in Sources */,
+				45E012322AE121510067390C /* CustomViewTrade.swift in Sources */,
+				455F565A2AE010F700E7CB2C /* TradeInteractor.swift in Sources */,
+				455F56432ADFE5AF00E7CB2C /* ProtocolsTopModule.swift in Sources */,
+				455F563D2ADFE58300E7CB2C /* TopPresenter.swift in Sources */,
+				459E9EA52AE29F5500B83631 /* PreloaderProtocols.swift in Sources */,
+				45F45F022B25216D00536568 /* CollectionViewCell.swift in Sources */,
+				4583419E2ADFE1E300742A3D /* ViewTopController.swift in Sources */,
+				459E9E922AE1E29F00B83631 /* CurrencyPresenter.swift in Sources */,
+				455F563F2ADFE58F00E7CB2C /* TopInteractor.swift in Sources */,
+				4583419A2ADFE1E300742A3D /* AppDelegate.swift in Sources */,
+				455F564D2ADFFF7000E7CB2C /* TradeRouter.swift in Sources */,
+				455F56582AE010A600E7CB2C /* TradePresenter.swift in Sources */,
+				459E9E9D2AE29EFB00B83631 /* PreloaderViewController.swift in Sources */,
+				459E9E9F2AE29F1A00B83631 /* PreloaderPresenter.swift in Sources */,
+				459E9EA12AE29F2F00B83631 /* PreloaderInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		458341A42ADFE1E900742A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				458341A52ADFE1E900742A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		458341A82ADFE1E900742A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		458341A92ADFE1E900742A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		458341AB2ADFE1E900742A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H28W9UFVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vasiliy.TradingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		458341AC2ADFE1E900742A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H28W9UFVKQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingApp/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vasiliy.TradingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		458341912ADFE1E300742A3D /* Build configuration list for PBXProject "TradingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458341A82ADFE1E900742A3D /* Debug */,
+				458341A92ADFE1E900742A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458341AA2ADFE1E900742A3D /* Build configuration list for PBXNativeTarget "TradingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458341AB2ADFE1E900742A3D /* Debug */,
+				458341AC2ADFE1E900742A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4583418E2ADFE1E300742A3D /* Project object */;
+}
