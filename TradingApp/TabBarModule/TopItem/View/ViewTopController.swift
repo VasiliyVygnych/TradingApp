@@ -20,7 +20,6 @@ class ViewTopController: UIViewController {
         label.text = "TOP 10 Traders"
         return label
     }()
-    
     private var headerLabel: UILabel = {
        let label = UILabel()
         label.textColor = .white
@@ -94,21 +93,12 @@ extension ViewTopController: UITableViewDelegate,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cell,
                                                  for: indexPath) as! TableView
-
-//        self.tableView.endUpdates()
-//        self.tableView.beginUpdates()
-
-        
-        
         let model = modelTrade.sorted() { $0.profit > $1.profit }[indexPath.row]
-        
         Timer.scheduledTimer(withTimeInterval: 3.0,
                              repeats: true) { timer in
             modelTrade = modelTrade.sorted() { $0.profit < $1.profit }
             self.tableView.reloadData()
         }
-        
-       
         cell.configuration(model: model)
         cell.randomDataСhanges(model: model,
                            indexPath: indexPath)

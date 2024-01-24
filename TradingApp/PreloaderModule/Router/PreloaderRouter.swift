@@ -26,8 +26,8 @@ class PreloaderRouter: PreloaderRouterProtocol {
 //MARK: - initialPreloaderView
     func initialRootView() {
         if let navigationController = navigationController {
-            if UserDefaults.standard.bool(forKey: "agreement") == false {
-                let mainViewController = assembler.createMainModule(router: self)
+            if UserDefaults.standard.bool(forKey: "agreement") == true {
+                let mainViewController = assembler.createPreloaderModule(router: self)
                 navigationController.viewControllers = [mainViewController]
             } else {
                 let tabBar = assembler.createTabBar(router: self)
@@ -38,15 +38,6 @@ class PreloaderRouter: PreloaderRouterProtocol {
                 navigationController.viewControllers = [tabBar]
             }
         }
-    }
-//MARK: - presentWelcomeScreen
-    func presentWelcomeScreen(from view: PreloaderViewProtocol) {
-        let welcomeView = assembler.makeWelcomeScreen()
-        guard let viewVC = view as? UIViewController else {
-            fatalError("Invalid View Protocol type")
-        }
-        viewVC.navigationController?.pushViewController(welcomeView,
-                                                        animated: true)
     }
 //MARK: - popToRoot
     func popToRoot() {

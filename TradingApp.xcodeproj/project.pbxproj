@@ -34,10 +34,10 @@
 		459E9EA32AE29F3F00B83631 /* PreloaderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA22AE29F3F00B83631 /* PreloaderRouter.swift */; };
 		459E9EA52AE29F5500B83631 /* PreloaderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA42AE29F5500B83631 /* PreloaderProtocols.swift */; };
 		459E9EA72AE2CA4000B83631 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E9EA62AE2CA4000B83631 /* Model.swift */; };
+		45B451682B611F8A003269C4 /* SelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B451672B611F8A003269C4 /* SelfModel.swift */; };
 		45E012322AE121510067390C /* CustomViewTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E012312AE121510067390C /* CustomViewTrade.swift */; };
 		45F45F022B25216D00536568 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F45F012B25216D00536568 /* CollectionViewCell.swift */; };
 		45F45F042B3310A900536568 /* CustomKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F45F032B3310A800536568 /* CustomKeyboardView.swift */; };
-		45F45F062B3B823100536568 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F45F052B3B823100536568 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,10 +70,10 @@
 		459E9EA22AE29F3F00B83631 /* PreloaderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderRouter.swift; sourceTree = "<group>"; };
 		459E9EA42AE29F5500B83631 /* PreloaderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloaderProtocols.swift; sourceTree = "<group>"; };
 		459E9EA62AE2CA4000B83631 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		45B451672B611F8A003269C4 /* SelfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfModel.swift; sourceTree = "<group>"; };
 		45E012312AE121510067390C /* CustomViewTrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTrade.swift; sourceTree = "<group>"; };
 		45F45F012B25216D00536568 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		45F45F032B3310A800536568 /* CustomKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardView.swift; sourceTree = "<group>"; };
-		45F45F052B3B823100536568 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +196,7 @@
 			children = (
 				455F56532AE00EB000E7CB2C /* Network.swift */,
 				459E9EA62AE2CA4000B83631 /* Model.swift */,
+				45B451672B611F8A003269C4 /* SelfModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -344,8 +345,7 @@
 		459E9E972AE29E0800B83631 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				45F45F072B3C0F9600536568 /* PreloaderView */,
-				45F45F082B3C0FA900536568 /* WelcomeView */,
+				459E9E9C2AE29EFB00B83631 /* PreloaderViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,22 +380,6 @@
 				459E9EA42AE29F5500B83631 /* PreloaderProtocols.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		45F45F072B3C0F9600536568 /* PreloaderView */ = {
-			isa = PBXGroup;
-			children = (
-				459E9E9C2AE29EFB00B83631 /* PreloaderViewController.swift */,
-			);
-			path = PreloaderView;
-			sourceTree = "<group>";
-		};
-		45F45F082B3C0FA900536568 /* WelcomeView */ = {
-			isa = PBXGroup;
-			children = (
-				45F45F052B3B823100536568 /* WelcomeViewController.swift */,
-			);
-			path = WelcomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,11 +461,11 @@
 				455F56502AE0086C00E7CB2C /* TableView.swift in Sources */,
 				455F56542AE00EB000E7CB2C /* Network.swift in Sources */,
 				455F56472ADFF76000E7CB2C /* TradeViewController.swift in Sources */,
+				45B451682B611F8A003269C4 /* SelfModel.swift in Sources */,
 				459E9EA32AE29F3F00B83631 /* PreloaderRouter.swift in Sources */,
 				455F56602AE013EB00E7CB2C /* CurrencyModuleProtocols.swift in Sources */,
 				455F56412ADFE59A00E7CB2C /* TopRouter.swift in Sources */,
 				459E9EA72AE2CA4000B83631 /* Model.swift in Sources */,
-				45F45F062B3B823100536568 /* WelcomeViewController.swift in Sources */,
 				45E012322AE121510067390C /* CustomViewTrade.swift in Sources */,
 				455F565A2AE010F700E7CB2C /* TradeInteractor.swift in Sources */,
 				455F56432ADFE5AF00E7CB2C /* ProtocolsTopModule.swift in Sources */,

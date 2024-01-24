@@ -10,7 +10,7 @@ import UIKit
 class Assembler: AssemblerBuilderProtocol {
    
 //MARK: - createMainModule
-    func createMainModule(router: PreloaderRouterProtocol) -> UIViewController {
+    func createPreloaderModule(router: PreloaderRouterProtocol) -> UIViewController {
         let viewController = PreloaderViewController()
         var presenter: PreloaderPresenterProtocol & PreloaderInteractorOutputProtocol = PreloaderPresenter()
         var interactor: PreloaderInteractorInputProtocol = PreloaderInteractor()
@@ -79,11 +79,6 @@ class Assembler: AssemblerBuilderProtocol {
         presenter.router = router
         interactor.presenter = presenter
         interactor.network = network
-        return viewController
-    }
-//MARK: - makeWelcomeScreen
-    func makeWelcomeScreen() -> UIViewController {
-        let viewController = WelcomeViewController()
         return viewController
     }
 }

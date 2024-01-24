@@ -60,14 +60,9 @@ class TradePresenter: TradePresenterProtocol {
             buttom.layoutIfNeeded()
         }
     }
-    
-    
     func keyboardNumber(number: Int) {
         print("keyboard number = \(number)")
     }
-    
-    
-    
 //MARK: - statusNotification
     func statusNotification(option: Int) {
         let view = view as! UIViewController

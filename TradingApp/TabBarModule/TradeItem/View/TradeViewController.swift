@@ -161,7 +161,7 @@ class TradeViewController: UIViewController,
 extension TradeViewController: TradeViewProtocol {
     func setData() {
         balanceTitle.text = String(myFinances.balance)
-        //??
+    
         let formatterTimer = NumberFormatter()
         formatterTimer.decimalSeparator = ":"
         formatterTimer.maximumFractionDigits = 2
@@ -175,7 +175,6 @@ extension TradeViewController: TradeViewProtocol {
         formatterInvestment.minimumFractionDigits = 1
         let formattedInvestment = formatterInvestment.string(from: NSNumber(value: myFinances.investment))
         customView.investmentTitle.text = formattedInvestment
-        //??
     }
 //MARK: - setTextButton
     func setTextButton(text: String) {

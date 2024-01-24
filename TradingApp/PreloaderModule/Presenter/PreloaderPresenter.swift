@@ -8,21 +8,12 @@
 import UIKit
 
 class PreloaderPresenter: PreloaderPresenterProtocol {
-        
     var view: PreloaderViewProtocol?
     var interactor: PreloaderInteractorInputProtocol?
     var router: PreloaderRouterProtocol?
     let defaults = UserDefaults.standard
     var agreement = Bool()
     
-    func exitApp() {
-        exit(0)
-    }
-    
-    func presentWelcomeView() {
-        guard let view = view else { return }
-        router?.presentWelcomeScreen(from: view)
-    }
 //MARK: - permissionForNotification
     func permissionForNotification() -> UIAlertController {
         let alert = UIAlertController(title: "“App” would like to Send You Notifications",
@@ -32,12 +23,11 @@ class PreloaderPresenter: PreloaderPresenterProtocol {
                                          style: .default) { (action) in
             self.agreement = false
             self.defaults.set(self.agreement, forKey: "agreement")
-//            self.exitApp()
-            self.presentWelcomeView()
+            self.router?.initialRootView()
         }
         let allow = UIAlertAction(title: "Allow",
                                     style: .default) { (action) in
-            self.agreement = true
+            self.agreement = false
             self.defaults.set(self.agreement, forKey: "agreement")
             self.router?.initialRootView()
       }

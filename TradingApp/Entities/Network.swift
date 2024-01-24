@@ -22,8 +22,6 @@ class Network: NetworkProtocol {
 //MARK: - purchaseInvestments
     func purchaseInvestments(value: Double) {
         print("layer network, investments = \(value)")
-        
-        
-        
+  
     }
 }

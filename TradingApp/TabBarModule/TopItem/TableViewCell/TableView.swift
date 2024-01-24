@@ -66,9 +66,6 @@ class TableView: UITableViewCell {
                                   Float(model.profit))
         imagePreview.image = model.image
     }
-    
-  
-    
 //MARK: - randomDataСhanges
     func randomDataСhanges(model: Items,
                            indexPath: IndexPath) {
@@ -88,9 +85,6 @@ class TableView: UITableViewCell {
             }
         }
     }
-    
-    
-    
 // MARK: - init
     override init(style: UITableViewCell.CellStyle,
                   reuseIdentifier: String?) {
