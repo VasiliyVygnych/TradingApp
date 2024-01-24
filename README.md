@@ -14,6 +14,10 @@ TradingApp - Мобильное приложение, разработанное
 * Протокольная инъекция зависимостей.
 * 100% верстка кодом.
 
+
+![Simulator Screen Recording - iPhone 14 Pro - 2024-01-24 at 14 25 36](https://github.com/VasiliyVygnych/TradingApp/assets/126402174/90eca45d-211b-4b69-b35b-6f80de2d2e22)
+
+
 ![Simulator Screen Shot - iPhone 14 Pro - 2024-01-24 at 14 25 46](https://github.com/VasiliyVygnych/TradingApp/assets/126402174/f48ca863-7233-448d-a6de-50c9e03768db)
 ![Simulator Screen Shot - iPhone 14 Pro - 2024-01-24 at 14 25 50](https://github.com/VasiliyVygnych/TradingApp/assets/126402174/2576503e-f53a-4b9f-9889-d816feac67c7)
 ![Simulator Screen Shot - iPhone 14 Pro - 2024-01-24 at 14 25 54](https://github.com/VasiliyVygnych/TradingApp/assets/126402174/b45e9c64-0a05-4de4-aaf4-c32575f32edc)
